@@ -1,4 +1,4 @@
-<img width="1368" height="684" alt="01-overview" src="https://github.com/user-attachments/assets/966f2115-7e8b-4b3b-8940-b7a0524c170d" /># Customer Retention & Acquisition Analysis | Power BI
+# Customer Retention & Acquisition Analysis | Power BI
 
 > **Business question:** Adventure Works wins new customers but loses too many after their first purchase. Who are the new customers, how long do they stay, and how many more can we expect to acquire next year?
 
