@@ -41,7 +41,7 @@ Adventure Works sells outdoor gear in a highly competitive market. Management is
 
 <img width="1367" height="693" alt="02-first-purchase" src="https://github.com/user-attachments/assets/31606fbc-f054-4be3-9930-c5cd6df02642" />
 
-- **March 2022** was the best month of 2022 for new customers, with **933** first-time buyers. A spike like this suggests a successful campaign or a seasonal effect.
+- **June 2022** was the best month of 2022 for new customers, with **933** first-time buyers. A spike like this suggests a successful campaign or a seasonal effect.
 - **4,931** customers made their first purchase between December 2021 and December 2022.
 
 ## Customer retention over time
