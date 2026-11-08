@@ -100,10 +100,9 @@ The analysis gives management a view of when customers drop off, who the new cus
 
 | Cohort retention rate | Decomposition tree | Forecast |
 |---|---|---|
-| <img width="1368" height="694" alt="04-retention-rate" src="https://github.com/user-attachments/assets/211905df-9467-429b-910a-85b747b63bcc" />
- | <img width="1369" height="688" alt="05-decomposition-tree" src="https://github.com/user-attachments/assets/5a7fd9b5-f3c8-4502-96fc-92c945ac3b0d" />
- | <img width="1366" height="687" alt="06-forecast" src="https://github.com/user-attachments/assets/2b6cbe94-c68f-4bf8-adec-3e24cc2fd30f" />
- |
+| <img width="700" height="300" alt="04-retention-rate" src="https://github.com/user-attachments/assets/211905df-9467-429b-910a-85b747b63bcc" />|
+| <img width="700" height="300" alt="05-decomposition-tree" src="https://github.com/user-attachments/assets/5a7fd9b5-f3c8-4502-96fc-92c945ac3b0d" />|
+| <img width="700" height="300" alt="06-forecast" src="https://github.com/user-attachments/assets/2b6cbe94-c68f-4bf8-adec-3e24cc2fd30f" />|
 
 ## Method
 
