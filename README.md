@@ -1,8 +1,8 @@
-# Customer Retention & Acquisition Analysis | Power BI
+<img width="1368" height="684" alt="01-overview" src="https://github.com/user-attachments/assets/966f2115-7e8b-4b3b-8940-b7a0524c170d" /># Customer Retention & Acquisition Analysis | Power BI
 
 > **Business question:** Adventure Works wins new customers but loses too many after their first purchase. Who are the new customers, how long do they stay, and how many more can we expect to acquire next year?
 
-![Overview dashboard](images/01-overview.png)
+<img width="1368" height="684" alt="01-overview" src="https://github.com/user-attachments/assets/46c0b2a5-5886-46a6-ad66-d676765a5a35" />
 
 ## At a glance
 
@@ -35,6 +35,50 @@ Adventure Works sells outdoor gear in a highly competitive market. Management is
 | Strongest first-purchase path | Women buying **Road Bikes** through **retail stores** in **Asia** (retail is about 78% of that segment) |
 | Forecast | About **919** first purchases expected in **April 2023** and about **223** in **December 2023** |
 
+# Detailed insights by report page
+
+## Cohort analysis: first purchases
+
+<img width="1367" height="693" alt="02-first-purchase" src="https://github.com/user-attachments/assets/31606fbc-f054-4be3-9930-c5cd6df02642" />
+
+- **March 2022** was the best month of 2022 for new customers, with **933** first-time buyers. A spike like this suggests a successful campaign or a seasonal effect.
+- **4,931** customers made their first purchase between December 2021 and December 2022.
+
+## Customer retention over time
+
+<img width="1369" height="692" alt="03-retention-over-time" src="https://github.com/user-attachments/assets/4ac59ed2-4511-4b3a-81f5-0d00a1d63b9a" />
+
+- **621** customers of the **December 2021** cohort bought again in month 6.
+
+## Customer retention rate
+
+<img width="1368" height="694" alt="04-retention-rate" src="https://github.com/user-attachments/assets/552092ce-a268-4c62-a68b-d29f7128bf97" />
+
+- The **December 2021** cohort is the largest, with **946** new customers, probably helped by holiday shopping and promotions.
+- Retention of that cohort: **66%** in month 6 (June 2022), **60%** in July, **54%** in August and **43%** by December 2022. The month-6 peak may reflect seasonality (summer is peak season for cycling and outdoor gear) or a June promotion, which Adventure Works should verify.
+- After **3 months**: **39%** for the December 2021 cohort versus **24%** for January 2022.
+- **Reading:** customers acquired in peak season show stronger loyalty than those acquired in quiet months. Adventure Works should compare the experience of both cohorts (offers, channels, products) before drawing conclusions.
+
+## Decomposition tree
+
+<img width="1369" height="688" alt="05-decomposition-tree" src="https://github.com/user-attachments/assets/725736e9-bf55-41ba-9772-dffefe7cdfd9" />
+
+- **Why it helps:** root-cause exploration without writing queries; it reveals concentration hidden behind balanced totals (the three regions look similar at the top level, but a strong skew appears after drilling down); it compares the weight of each category at every level; and users can reorder dimensions live in a meeting.
+- **What it found:** a strong skew toward **women buying Road Bikes through retail stores in Asia**. Retail stores represent about **78%** of first purchases in that segment, and Accessories are the weakest category (25,870 in Asia).
+- **Use for decisions:** target campaigns, retail partnerships and stock; check whether the high-volume entry path also retains well, then scale acquisition (if retention is strong) or fix post-purchase follow-up (if it is weak).
+
+## Forecast of first purchases
+
+<img width="1366" height="687" alt="06-forecast" src="https://github.com/user-attachments/assets/3140633f-53ab-48a3-a6af-8e20083ddf81" />
+
+- About **919** new customers expected in **April 2023**, after a period of decline in the preceding months.
+- About **223** new customers expected in **December 2023**.
+- The confidence interval widens with the horizon: the further ahead, the less certain the projection, so plans should use the lower and upper bounds, not only the central line.
+
+## Conclusion
+The analysis gives management a view of when customers drop off, who the new customers are, and what acquisition may look like over the next 12 months, so that resources can be aligned with seasonality and market demand.
+
+
 ## Recommendations
 
 - **Marketing:** focus Road Bikes campaigns on women in Asia, and test whether the same female skew exists in Europe and North America. Male acquisition in Asia looks under-penetrated (18,974 versus 54,127 first-purchase records).
@@ -56,7 +100,10 @@ Adventure Works sells outdoor gear in a highly competitive market. Management is
 
 | Cohort retention rate | Decomposition tree | Forecast |
 |---|---|---|
-| ![Retention rate](images/04-retention-rate.png) | ![Decomposition tree](images/05-decomposition-tree.png) | ![Forecast](images/06-forecast.png) |
+| <img width="1368" height="694" alt="04-retention-rate" src="https://github.com/user-attachments/assets/211905df-9467-429b-910a-85b747b63bcc" />
+ | <img width="1369" height="688" alt="05-decomposition-tree" src="https://github.com/user-attachments/assets/5a7fd9b5-f3c8-4502-96fc-92c945ac3b0d" />
+ | <img width="1366" height="687" alt="06-forecast" src="https://github.com/user-attachments/assets/2b6cbe94-c68f-4bf8-adec-3e24cc2fd30f" />
+ |
 
 ## Method
 
@@ -66,23 +113,6 @@ Adventure Works sells outdoor gear in a highly competitive market. Management is
 4. **Retention measures:** a `Months After Purchase` table (1 to 12) and two DAX measures, `Customer Retention` and `Customer Retention Rate %`.
 5. **Exploration:** decomposition tree on `First Purchase Date` explained by region, gender, product and customer segment.
 6. **Forecast:** Power BI forecasting on distinct new customers per month, 12 months ahead.
-
-The DAX is documented in [`dax/measures.md`](dax/measures.md) and the fields in [`docs/data-dictionary.md`](docs/data-dictionary.md).
-
-## Repository structure
-
-```
-.
-├── README.md
-├── powerbi/
-│   └── Opportunity_analysis_in_Power_BI.pbix   # open with Power BI Desktop
-├── dax/
-│   └── measures.md                             # calculated column, table and measures
-├── docs/
-│   ├── data-dictionary.md
-│   └── insights.md                             # detailed answers per report page
-└── images/                                     # screenshots used in this README
-```
 
 ## How to open the report
 
