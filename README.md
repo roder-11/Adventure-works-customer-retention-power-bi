@@ -98,10 +98,6 @@ The analysis gives management a view of when customers drop off, who the new cus
 | 6 | **Forecasting First Purchase** | 12-month forecast of new customers (95% confidence interval, seasonality of 10 points) |
 | (hidden) | **Synthesis, Conclusion** | Project objectives and written conclusions |
 
-| Cohort retention rate | Decomposition tree | Forecast |
-|---|---|---|
-| ![Retention rate](images/04-retention-rate.png) | ![Decomposition tree](images/05-decomposition-tree.png) | ![Forecast](images/06-forecast.png) |
-
 ## Method
 
 1. **Accessible theme:** *Accessible City Park* for readable contrast.
@@ -125,5 +121,5 @@ The analysis gives management a view of when customers drop off, who the new cus
 
 ## Author
 
-**Rodrigue Awono** | Business Intelligence & Data Analyst, Douala, Cameroon
+**Rodrigue Awono** | Business Intelligence & Data Analyst.
 [LinkedIn](https://www.linkedin.com/in/awonojeanrodrigue-businessintelligence-dataanalyst/)
